@@ -49,6 +49,11 @@
 
 결국 linked list 자료구조는 search 에도 O(n)의 time complexity 를 갖고, 삽입, 삭제에 대해서도 O(n)의 time complexity 를 갖는다. 그렇다고 해서 아주 쓸모없는 자료구조는 아니기에, 우리가 학습하는 것이다. 이 Linked List 는 Tree 구조의 근간이 되는 자료구조이며, Tree 에서 사용되었을 때 그 유용성이 드러난다.
 
+![image](https://github.com/user-attachments/assets/e267013a-c489-4a05-8519-d504a5dfd0e3)
+
+메모리의 중간이 이미 채워져있는 경우를 제외하면 물리적 주소는 순서대로 저장되며(add, insert 포함), 정렬하면 Node의 back, front 링크 주소가 달라지는 것 뿐이다.
+
+
 #### Personal Recommendation
 
 * Array 를 기반으로한 Linked List 구현
