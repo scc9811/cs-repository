@@ -32,4 +32,24 @@
   * DI (Dependency Injection) : 클래스의 생성자/필드/메서드 등을 Reflection을 통해 분석하고, 자동으로 의존성 주입.
   * AOP ( Aspect Oriented Programming ) : 메서드 호출을 가로채서 로깅/트랜잭션 처리 등을 수행하는 기능. (역시 런타임 단계에서 수행됨)
 
-### 
+
+### 3. RESTful API
+* API란 : application programming interface, 두 소프트웨어 구성 요소가 서로 통신할 수 있게 하는 메커니즘.
+* REST란 : Representational State Transfer, 자원을 이름으로 구분하여 해당 자원의 상태를 주고받는것.
+  * HTTP URI(Uniform Resource Identifier)을 통해 자원을 명시하고,
+  * HTTP Method(POST, GET, DELETE, PATCH 등)를 통해
+  * 해당 자원(URI)에 대한 CRUD Operation을 적용하는것.
+    * URI(Uniform Resource Identifier) vs URL(Uniform Resource Locator) :
+     * https://naver.com/category : 리소스의 위치까지만 나타내는 URL
+     * https://naver.com/category/12 또는 ~~category?page=12 : URL을 포함한 URI
+     * 즉, 뒤의 query가 붙으면 URI가 됨.
+
+* RESTful API란 : REST의 원리를 따르는 API
+* REST의 장점 :
+  * HTTP 프로토콜의 인프라를 그대로 사용하므로 REST API 사용을 위한 별도의 인프라 구축할 필요 없음.
+  * HTTP 표준 프로토콜에 따르는 모든 플랫폼에서 사용 가능.
+* REST의 단점 :
+  * 표준 자체가 존재하지 않아 정의가 필요하다. (POST, GET Method를 이용한다고 해도 서버에서의 연산은 개발자가 정함.)
+ 
+
+
