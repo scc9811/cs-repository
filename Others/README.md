@@ -35,7 +35,7 @@
 
 ### 3. RESTful API
 * API란 : application programming interface, 두 소프트웨어 구성 요소가 서로 통신할 수 있게 하는 메커니즘.
-* REST란 : Representational State Transfer, 자원을 이름으로 구분하여 해당 자원의 상태를 주고받는것.
+* REST란 : Representational State Transfer ( 표현적인 상태 전송 ), 자원을 이름으로 구분하여 해당 자원의 상태를 주고받는것. 
   * HTTP URI(Uniform Resource Identifier)을 통해 자원을 명시하고,
   * HTTP Method(POST, GET, DELETE, PATCH 등)를 통해
   * 해당 자원(URI)에 대한 CRUD Operation을 적용하는것.
