@@ -109,3 +109,14 @@
 * java 8부터 지원하는 패키지.
 * java.time.LocalDate(날짜만 표현), ~~.LocalTime(시간만 표현), ~~.LocalDateTime(날짜, 시간 표현) 등이 있다.
 * 불변(immutable) 으로 설계되어 있기 때문에 현재 권장되는 방법.
+
+
+### 8. Arrays.sort 람다
+![image](https://github.com/user-attachments/assets/80a7f296-c087-482c-939b-b366a850619c)
+![image](https://github.com/user-attachments/assets/313568f5-b567-4f05-9ad3-bd0cd03eb870)
+![image](https://github.com/user-attachments/assets/77fd0ed9-89d8-4615-8ae7-0b6aba092e97)
+
+* 함수형 인터페이스는 단 하나의 추상 메소드를 가지기 때문에 (o1, o2) -> ~~ 가 Comparator 의 compare 함수를 정의하는것.
+* 아래 2개의 sort 메소드는 같음.
+  
+![image](https://github.com/user-attachments/assets/ac458b12-42cb-4007-9c91-49dc37947f36)
