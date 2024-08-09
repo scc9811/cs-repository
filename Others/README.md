@@ -90,3 +90,10 @@
 * 데이터 오버헤드가 적음 ( HTTP Header가 없기 때문 ), 실시간 응답성 뛰어남, 양방향 통신 가능.
 ![image](https://github.com/user-attachments/assets/123d4f20-c1e7-4bf0-9ab5-788e3e9064b8)
 
+
+
+### 6. 계층별 Header 생성 위치
+![image](https://github.com/user-attachments/assets/aa0483fe-2052-4bd0-bbf7-a8d3a119df52)
+
+* 패킷의 헤더를 추가하는 "객체"는 네트워크 스택의 각 계층에 구현된 "소프트웨어 모듈"이다.
+* 크게 NIC, Network Stack ( os level ), Application 으로 생각하면 될듯.
