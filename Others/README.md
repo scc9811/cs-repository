@@ -117,6 +117,7 @@
 ![image](https://github.com/user-attachments/assets/77fd0ed9-89d8-4615-8ae7-0b6aba092e97)
 
 * 함수형 인터페이스는 단 하나의 추상 메소드를 가지기 때문에 (o1, o2) -> ~~ 가 Comparator 의 compare 함수를 정의하는것.
-* 아래 2개의 sort 메소드는 같음.
+* 아래 3개의 sort 메소드는 같음.
   
-![image](https://github.com/user-attachments/assets/ac458b12-42cb-4007-9c91-49dc37947f36)
+![image](https://github.com/user-attachments/assets/9a785d19-bce0-49d4-a21a-6c4375294eaa)
+
