@@ -52,4 +52,13 @@
   * 표준 자체가 존재하지 않아 정의가 필요하다. (POST, GET Method를 이용한다고 해도 서버에서의 연산은 개발자가 정함.)
  
 
+### 4. socket vs port
+![image](https://github.com/user-attachments/assets/0e7296ea-3871-4302-9548-1d43d5c969ce)
+
+
+* Port : 네트워크 프로토콜에서 통신의 엔드포인트를 구분하는 숫자 ( 식별자 )
+* Socket : [Address: Port]
+
+* 아래처럼 내 public ip와 request 의 header 로 들어가는 Remote Address 다른 이유 : 프록시 서버, 로드밸런서 주소로 설정되기 때문(?)
+<img src="https://github.com/user-attachments/assets/28ac3f87-5d94-439c-ab90-2dffc98d4ad0" width=600/>
 
