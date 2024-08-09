@@ -97,3 +97,15 @@
 
 * 패킷의 헤더를 추가하는 "객체"는 네트워크 스택의 각 계층에 구현된 "소프트웨어 모듈"이다.
 * 크게 NIC, Network Stack ( os level ), Application 으로 생각하면 될듯.
+
+
+### 7. Java의 날짜/시간 라이브러리
+#### 7-1. java.util.Date , java.util.Calendar
+* 각각 java 1.0, 1.1 부터 제공됨.
+* 가장 큰 단점 : Date 객체는 변경 가능(mutable)하므로 스레드 안전하지 않아서 권장되지 않음.
+* 또다른 단점 : UTC가 기본이고, 지역별 시간을 다루려면 java.util.TimeZone 클래스를 사용해야 함.
+
+#### 7-2. java.time 패키지
+* java 8부터 지원하는 패키지.
+* java.time.LocalDate(날짜만 표현), ~~.LocalTime(시간만 표현), ~~.LocalDateTime(날짜, 시간 표현) 등이 있다.
+* 불변(immutable) 으로 설계되어 있기 때문에 현재 권장되는 방법.
