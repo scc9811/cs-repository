@@ -62,3 +62,31 @@
 * 아래처럼 내 public ip와 request 의 header 로 들어가는 Remote Address 다른 이유 : 프록시 서버, 로드밸런서 주소로 설정되기 때문(?)
 <img src="https://github.com/user-attachments/assets/28ac3f87-5d94-439c-ab90-2dffc98d4ad0" width=600/>
 
+
+### 5. HTTP Polling vs SSE vs Web Socket
+![image](https://github.com/user-attachments/assets/d14a7430-1744-4fea-a195-2f455f162db8)
+
+#### 5-1. Short Polling
+* Short Polling : client 가 server 로 지속적으로 request 를 보내고 갱신된 데이터가 있다면 그것을 응답받음.
+* 요청이 많기 때문에 네트워크 대역폭과 리소스 소모 비효율적.
+  
+![image](https://github.com/user-attachments/assets/e9c7c3b9-9dca-43cc-9cb4-1a07e101d68d)
+
+#### 5-2. Long Polling
+* Long Polling : request를 보낸 후 서버에서 변경이 일어나면 response를 보내는 방법.
+* 데이터 변경이 잦으면 short polling과 다를게 없음.
+* 데이터 변경이 드문 경우 적절함.
+
+![image](https://github.com/user-attachments/assets/94ec7558-efac-42f8-a6e1-ad9b0df74b5c)
+
+#### 5-3. SSE (Server Sent Event)
+* Server Sent Event : client가 첫 connection 요청을 보낸 후, 서버에서 데이터 갱신이 있을 때마다 response.
+* Server -> Client 로의 데이터 전송만 가능.
+* 주식 시세 업데이트, 소셜 미디어 피드, 실시간 스포츠 경기 점수 갱신 등 Client -> Server 방향이 필요 없는 경우 적합.
+![image](https://github.com/user-attachments/assets/a18f5718-0422-4963-876e-a334e5d89128)
+
+#### 5-4. Web Socket
+* Web Socket : Http Upgrade 요청으로 ws 프로토콜 사용.
+* 데이터 오버헤드가 적음 ( HTTP Header가 없기 때문 ), 실시간 응답성 뛰어남, 양방향 통신 가능.
+![image](https://github.com/user-attachments/assets/123d4f20-c1e7-4bf0-9ab5-788e3e9064b8)
+
